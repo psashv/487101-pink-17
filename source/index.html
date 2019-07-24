@@ -2,11 +2,58 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <header class="site-header">
+      <h2 class="visually-hidden">Навигация сайта</h2>
+      <div class="site-header__logo">
+        <img class="site-header__logo-image" src="http://placehold.it/75x22" alt="logo" width="75" height="22">
+      </div>
+      <nav class="site-nav">
+        <a class="site-nav__item" href="index.html">главная</a>
+        <a class="site-nav__item" href="photo.html">фотографии</a>
+        <a class="site-nav__item" href="form.html">конкурс</a>
+        <a class="site-nav__item" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Главная страница сайта PINK</h1>
+      <header class="download">
+        <h2 class="download__title">Взгляните на жизнь иначе!</h2>
+        <img class="dosnload__image" src="http://placehold.it/498x314" alt="hand with phone" width="498" height="314">
+        <a class="button download__button" href="#">Скачать приложение</a>
+        <div class="download__list">
+          <img class="download__icon" src="http://placehold.it/47x56" alt="apple logo" width="47" height="56">
+          <img class="download__icon" src="http://placehold.it/43x47" alt="android logo" width="43" height="47">
+          <img class="download__icon" src="http://placehold.it/44x41" alt="microsoft logo" width="44" height="41">
+        </div>
+        <p class="download__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </header>
+      <section class="advantages">
+        <h2 class="advantages__title">
+          <div class="advantages__text">Устали от серости мегаполиса?</div>
+          <div class="advantages__text">Нам есть, что вам предложить!</div>
+        </h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <img class="advantages__image" src="http://placehold.it/186x382" alt="phone image" width="186" height="382">
+            <h3 class="advantages__subtitle">Поднимает настроение</h3>
+            <p class="advantages__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="advantages__item">
+            <img class="advantages__image" src="http://placehold.it/186x382" alt="phone image" width="186" height="382">
+            <h3 class="advantages__subtitle">Поднимает настроение</h3>
+            <p class="advantages__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="advantages__item">
+            <img class="advantages__image" src="http://placehold.it/186x382" alt="phone image" width="186" height="382">
+            <h3 class="advantages__subtitle">Заводит новых друзей</h3>
+            <p class="advantages__desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>

@@ -1,0 +1,25 @@
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 320px;
+  height: 284px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.site-footer__item:last-child {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+}
+
+.site-footer__text {
+  margin-right: 15px;
+
+  font-size: 14px;
+  color: #283645;
+}

@@ -1,0 +1,31 @@
+.site-nav {
+  box-sizing: border-box;
+  width: 320px;
+
+  background-color: #000000;
+}
+
+.site-nav__logo {
+  margin-bottom: 1px;
+  padding: 20px 0;
+  padding-left: 20px;
+
+  background-color: #283645;
+}
+
+.site-nav__item {
+  display: block;
+  margin-bottom: 1px;
+  padding: 20px 0;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+
+  background-color: #283645;
+  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}

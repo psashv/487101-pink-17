@@ -1,0 +1,85 @@
+.card {
+  position: relative;
+
+  box-sizing: border-box;
+  width: 280px;
+}
+
+.сard--best {
+  width: 320px;
+}
+
+.сard--best .card__inner {
+  margin: 0 auto;
+}
+
+.card__button {
+  @include button;
+
+  position: absolute;
+  top: 0;
+  right: 20px;
+
+  width: 140px;
+  height: 36px;
+
+  font-size: 12px;
+
+  background-color: #d22856;
+}
+
+.card__inner {
+  box-sizing: border-box;
+  width: 280px;
+  padding-top: 25px;
+  padding-left: 17px;
+  padding-bottom: 28px;
+
+  color: #283645;
+
+  background-color: #f2f2f2;
+}
+
+.card__user {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.card__name {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.card__user-status {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.card__desc {
+  margin: 0;
+  margin-bottom: 19px;
+
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.card__like {
+  display: flex;
+  align-items: center;
+}
+
+.card__icon {
+  display: block;
+  width: 13px;
+  height: 12px;
+  margin-right: 19px;
+
+  background: url("../img/icon-heart.svg") no-repeat;
+}
+
+.card__like-count {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #d22856;
+}

@@ -1,0 +1,40 @@
+.social {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 171px;
+  height: 45px;
+}
+
+.social__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+
+  border: 3px solid #283645;
+  border-radius: 30px;
+  opacity: 0.1;
+}
+
+.social__icon--twitter::after {
+  content: url("../img/icon-twitter.svg");
+
+  width: 18px;
+  height: 14px;
+}
+
+.social__icon--facebook::after {
+  content: url("../img/icon-facebook.svg");
+
+  width: 9px;
+  height: 18px;
+}
+
+.social__icon--youtube::after {
+  content: url("../img/icon-youtube.svg");
+
+  width: 15px;
+  height: 13px;
+}

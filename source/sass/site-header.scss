@@ -1,0 +1,32 @@
+.site-header {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  color: #ffffff;
+
+  background: #000000 url("../img/bg-back-mobile@1x.jpg") 0 258px no-repeat;
+  background-size: 320px 462px;
+}
+
+.site-header__image {
+  box-sizing: border-box;
+  width: 258px;
+  height: 286px;
+  margin-top: 110px;
+}
+
+.site-header__title {
+  box-sizing: border-box;
+  width: 170px;
+  height: 171px;
+  margin: 0 auto;
+  padding-top: 35px;
+
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.site-header__title--form {
+  width: 230px;
+}

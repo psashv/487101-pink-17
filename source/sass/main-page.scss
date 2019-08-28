@@ -1,0 +1,9 @@
+.main-page .site-footer {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-page .site-footer {
+    display: flex;
+  }
+}

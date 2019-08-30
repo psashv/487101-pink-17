@@ -1,0 +1,26 @@
+.switch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 56px;
+  height: 12px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.switch__item {
+  width: 6px;
+  height: 6px;
+
+  list-style: none;
+
+  border-radius: 50%;
+  background-color: #283645;
+  opacity: 0.3;
+}
+
+.switch__item--active {
+  background-color: #ffffff;
+  border: 3px solid #283645;
+  opacity: 1;
+}

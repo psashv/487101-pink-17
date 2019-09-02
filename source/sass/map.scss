@@ -1,0 +1,55 @@
+.map {
+  position: relative;
+  z-index: 1;
+
+  width: 320px;
+  margin: 0 auto;
+}
+
+.map::before {
+  position: absolute;
+  z-index: 2;
+  content: "";
+
+  width: 320px;
+  height: 123px;
+  background: url("../img/triangle-map@1x.png") -440px -71px no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    width: 660px;
+  }
+
+  .map::before {
+    width: 660px;
+    height: 123px;
+    background: url("../img/triangle-map@1x.png") -270px -3px no-repeat;
+  }
+
+  .map img {
+    content: url("../img/map-tablet@1x.png");
+
+    width: 660px;
+    height: 428px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    width: 1200px;
+  }
+
+  .map::before {
+    width: 1200px;
+    height: 123px;
+    background: url("../img/triangle-map-desktop@1x.png") -119px 0 no-repeat;
+  }
+
+  .map img {
+    content: url("../img/map-desktop@1x.png");
+
+    width: 1200px;
+    height: 522px;
+  }
+}

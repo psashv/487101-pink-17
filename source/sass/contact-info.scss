@@ -1,0 +1,40 @@
+.contact-info {
+  @include fieldset-reset;
+  box-sizing: border-box;
+  width: 320px;
+  padding: 44px 20px;
+  padding-top: 30px;
+}
+
+@media (max-width: calc(#{$tablet-width} - 1px)) {
+  .contact-info__title {
+    @include visually-hidden;
+  }
+}
+
+.contact-info__item {
+  display: block;
+  margin-bottom: 18px;
+}
+
+.contact-info__item:last-child {
+  margin-bottom: 0;
+}
+
+.contact-info__desc {
+  @include fieldset-title;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
+.contact-info__item input {
+  width: 256px;
+  height: 59px;
+  padding-left: 20px;
+
+  border: 2px solid #e5e5e5;
+}
+
+.contact-info__item input::placeholder {
+  @include fieldset-desc;
+}

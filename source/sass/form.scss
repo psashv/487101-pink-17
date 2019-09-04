@@ -1,0 +1,84 @@
+.form {
+  padding-top: 50px;
+  margin-bottom: 15px;
+}
+
+.form__container {
+  display: flex;
+
+  background-color: #f2f2f2;
+}
+
+.form__desc {
+  width: 273px;
+  margin: 0 auto;
+  margin-bottom: 45px;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  color: #283645;
+}
+
+.form__text {
+  display: none;
+}
+
+@mixin fieldset-reset {
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+}
+
+@mixin fieldset-title {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #d22856;
+}
+
+@mixin fieldset-desc {
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.form__action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__action input {
+  @include button;
+  width: 280px;
+  height: 63px;
+  margin-bottom: 36px;
+
+  font-size: 18px;
+  line-height: 30px;
+
+  border: 2px solid #2aab6d;
+  border-radius: 2px;
+  background-color: #2aab6d;
+}
+
+.form__note {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #283645;
+}
+
+.form__effect {
+  color: #d22856;
+}
+
+.form__extra-text {
+  display: none;
+}

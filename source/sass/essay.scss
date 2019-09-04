@@ -1,0 +1,28 @@
+.essay {
+  @include fieldset-reset;
+  box-sizing: border-box;
+  width: 320px;
+  margin-top: 32px;
+  margin-bottom: 48px;
+  padding: 0 20px;
+}
+
+.essay__title {
+  @include fieldset-title;
+  margin-bottom: 9px;
+
+  text-align: center;
+}
+
+.essay__text {
+  box-sizing: border-box;
+  width: 280px;
+  height: 201px;
+  padding: 18px;
+
+  border: 2px solid #e5e5e5;
+}
+
+.essay__text::placeholder {
+  @include fieldset-desc;
+}

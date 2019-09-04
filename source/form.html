@@ -16,16 +16,112 @@
         <img class="site-nav__logo-image" src="img/logo-pink-white-mobile.svg" alt="logo" width="75" height="22">
       </div>
       <div class="site-nav__list">
-        <a class="site-nav__item" href="index.html">главная</a>
-        <a class="site-nav__item" href="photo.html">фотографии</a>
-        <a class="site-nav__item" href="form.html">конкурс</a>
-        <a class="site-nav__item" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
+        <a class="site-nav__item" href="index.html">Главная</a>
+        <a class="site-nav__item" href="photo.html">Фотографии</a>
+        <a class="site-nav__item" href="form.html">Конкурс</a>
+        <a class="site-nav__item" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </nav>
     <h1 class="site-header__title site-header__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
   </header>
   <main class="page-form">
-
+    <form class="form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="form__desc">
+        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        <span class="form__text">Пожалуйста, заполните форму ниже:</span>
+      </p>
+      <fieldset class="full-name form__full-name">
+        <legend class="visually-hidden">Ваше ФИО</legend>
+        <label class="full-name__item full-name__item--last-name" for="last-name">
+          <p class="full-name__desc">фамилия:</p>
+          <input type="text" id="last-name" name="last-name" placeholder="Укажите фамилию *">
+        </label>
+        <label class="full-name__item full-name__item--name" for="name">
+          <p class="full-name__desc">имя:</p>
+          <input type="text" id="name" name="name" placeholder="Введите ваше имя *">
+        </label>
+        <label class="full-name__item full-name__item--patronymic" for="patronymic">
+          <p class="full-name__desc">отчество:</p>
+          <input type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+        </label>
+      </fieldset>
+      <div class="form__container">
+        <fieldset class="check form__check">
+          <legend class="check__title">ваши безбашенные достижения в путешествии</legend>
+          <label class="check__item" for="value1">
+            <input type="checkbox" id="value1" name="achievement" value="selfie" checked>
+            <div class="check__action"></div>
+            <span class="check__desc">Сделал селфи с акулой</span>
+          </label>
+          <label class="check__item" for="value2">
+            <input type="checkbox" id="value2" name="achievement" value="burn" checked>
+            <div class="check__action"></div>
+            <span class="check__desc">Обгорел на пляже</span>
+          </label>
+          <label class="check__item" for="value3">
+            <input type="checkbox" id="value3" name="achievement" value="saw">
+            <div class="check__action"></div>
+            <span class="check__desc">Видел Чака Норриса</span>
+          </label>
+          <label class="check__item" for="value4">
+            <input type="checkbox" id="value4" name="achievement" value="bought">
+            <div class="check__action"></div>
+            <span class="check__desc">Накупил сувениров</span>
+          </label>
+          <label class="check__item" for="value5">
+            <input type="checkbox" id="value5" name="achievement" value="hold" checked>
+            <div class="check__action"></div>
+            <span class="check__desc">Удержал башню</span>
+          </label>
+          <label class="check__item" for="value6">
+            <input type="checkbox" id="value6" name="achievement" value="destroy">
+            <div class="check__action"></div>
+            <span class="check__desc">Разгромил отель</span>
+          </label>
+        </fieldset>
+      </div>
+      <fieldset class="contact-info form__contact-info">
+        <legend class="contact-info__title">контактная информация</legend>
+        <label class="contact-info__item" for="phone">
+          <p class="contact-info__desc">номер телефона</p>
+          <input type="number" id="phone" name="phone" placeholder="Номер, пожалуйста">
+        </label>
+        <label class="contact-info__item" for="email">
+          <p class="contact-info__desc">адрес почты</p>
+          <input type="email" id="email" name="email" placeholder="Введите почту *">
+        </label>
+      </fieldset>
+      <div class="form__container">
+        <fieldset class="radio form__radio">
+          <legend class="radio__title">с каким приложением путешествовали?</legend>
+          <label class="radio__item" for="iOS">
+            <input type="radio" id="iOS" name="app" value="iOS" checked>
+            <div class="radio__action"></div>
+            <span class="radio__desc">Pink для iOS</span>
+          </label>
+          <label class="radio__item" for="Android">
+            <input type="radio" id="Android" name="app" value="Android">
+            <div class="radio__action"></div>
+            <span class="radio__desc">Pink для Android</span>
+          </label>
+          <label class="radio__item" for="WinPhone">
+            <input type="radio" id="WinPhone" name="app" value="WinPhone">
+            <div class="radio__action"></div>
+            <span class="radio__desc">Windows Phone</span>
+          </label>
+        </fieldset>
+      </div>
+      <fieldset class="essay form__essay">
+        <legend class="essay__title">опишите свои эмоции</legend>
+        <textarea class="essay__text" name="text" cols="30" rows="10"
+          placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      </fieldset>
+      <div class="form__action">
+        <input type="submit" value="отправить форму">
+        <p class="form__note"><span class="form__effect">* </span>&#8212 обязательные <span class="form__extra-text">для
+            заполнения</span> поля</p>
+      </div>
+    </form>
   </main>
   <footer class="site-footer">
     <img class="site-footer__item site-footer__logo" src="img/logo-pink-blue-mobile.svg" alt="footer logo" width="147"

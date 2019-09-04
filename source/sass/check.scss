@@ -58,3 +58,43 @@
 
   background: url("../img/icon-yes.svg");
 }
+
+@media (min-width: $tablet-width) {
+  .check {
+    @include fieldset-edit;
+    margin-bottom: 47px;
+    padding-bottom: 48px;
+  }
+
+  .check__title {
+    @include fieldset-title--tablet;
+    width: auto;
+    margin-bottom: 34px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .check {
+    min-width: 900px;
+    padding-bottom: 55px;
+  }
+
+  .check__inner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 121px;
+  }
+
+  .check__item {
+    height: 39px;
+  }
+
+  .check__item:nth-child(2n) {
+    margin-bottom: 0;
+  }
+}

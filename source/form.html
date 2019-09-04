@@ -45,53 +45,57 @@
           <input type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
         </label>
       </fieldset>
-      <div class="form__container">
+      <div class="form__container form__item-5">
         <fieldset class="check form__check">
           <legend class="check__title">ваши безбашенные достижения в путешествии</legend>
-          <label class="check__item" for="value1">
-            <input type="checkbox" id="value1" name="achievement" value="selfie" checked>
-            <div class="check__action"></div>
-            <span class="check__desc">Сделал селфи с акулой</span>
-          </label>
-          <label class="check__item" for="value2">
-            <input type="checkbox" id="value2" name="achievement" value="burn" checked>
-            <div class="check__action"></div>
-            <span class="check__desc">Обгорел на пляже</span>
-          </label>
-          <label class="check__item" for="value3">
-            <input type="checkbox" id="value3" name="achievement" value="saw">
-            <div class="check__action"></div>
-            <span class="check__desc">Видел Чака Норриса</span>
-          </label>
-          <label class="check__item" for="value4">
-            <input type="checkbox" id="value4" name="achievement" value="bought">
-            <div class="check__action"></div>
-            <span class="check__desc">Накупил сувениров</span>
-          </label>
-          <label class="check__item" for="value5">
-            <input type="checkbox" id="value5" name="achievement" value="hold" checked>
-            <div class="check__action"></div>
-            <span class="check__desc">Удержал башню</span>
-          </label>
-          <label class="check__item" for="value6">
-            <input type="checkbox" id="value6" name="achievement" value="destroy">
-            <div class="check__action"></div>
-            <span class="check__desc">Разгромил отель</span>
-          </label>
+          <div class="check__inner">
+            <label class="check__item" for="value1">
+              <input type="checkbox" id="value1" name="achievement" value="selfie" checked>
+              <div class="check__action"></div>
+              <span class="check__desc">Сделал селфи с акулой</span>
+            </label>
+            <label class="check__item" for="value2">
+              <input type="checkbox" id="value2" name="achievement" value="burn" checked>
+              <div class="check__action"></div>
+              <span class="check__desc">Обгорел на пляже</span>
+            </label>
+            <label class="check__item" for="value3">
+              <input type="checkbox" id="value3" name="achievement" value="saw">
+              <div class="check__action"></div>
+              <span class="check__desc">Видел Чака Норриса</span>
+            </label>
+            <label class="check__item" for="value4">
+              <input type="checkbox" id="value4" name="achievement" value="bought">
+              <div class="check__action"></div>
+              <span class="check__desc">Накупил сувениров</span>
+            </label>
+            <label class="check__item" for="value5">
+              <input type="checkbox" id="value5" name="achievement" value="hold" checked>
+              <div class="check__action"></div>
+              <span class="check__desc">Удержал башню</span>
+            </label>
+            <label class="check__item" for="value6">
+              <input type="checkbox" id="value6" name="achievement" value="destroy">
+              <div class="check__action"></div>
+              <span class="check__desc">Разгромил отель</span>
+            </label>
+          </div>
         </fieldset>
       </div>
       <fieldset class="contact-info form__contact-info">
         <legend class="contact-info__title">контактная информация</legend>
-        <label class="contact-info__item" for="phone">
-          <p class="contact-info__desc">номер телефона</p>
-          <input type="number" id="phone" name="phone" placeholder="Номер, пожалуйста">
-        </label>
-        <label class="contact-info__item" for="email">
-          <p class="contact-info__desc">адрес почты</p>
-          <input type="email" id="email" name="email" placeholder="Введите почту *">
-        </label>
+        <div class="contact-info__inner">
+          <label class="contact-info__item contact-info__item--phone" for="phone">
+            <p class="contact-info__desc">номер телефона</p>
+            <input type="number" id="phone" name="phone" placeholder="Номер, пожалуйста">
+          </label>
+          <label class="contact-info__item contact-info__item--email" for="email">
+            <p class="contact-info__desc">адрес почты</p>
+            <input type="email" id="email" name="email" placeholder="Введите почту *">
+          </label>
+        </div>
       </fieldset>
-      <div class="form__container">
+      <div class="form__container form__item-3">
         <fieldset class="radio form__radio">
           <legend class="radio__title">с каким приложением путешествовали?</legend>
           <label class="radio__item" for="iOS">

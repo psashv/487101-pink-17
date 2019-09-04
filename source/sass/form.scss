@@ -1,6 +1,6 @@
 .form {
-  padding-top: 50px;
   margin-bottom: 15px;
+  padding-top: 50px;
 }
 
 .form__container {
@@ -31,6 +31,15 @@
   border: none;
 }
 
+@mixin fieldset-edit {
+  flex-grow: 1;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 58px;
+
+  border: 2px solid #e5e5e5;
+}
+
 @mixin fieldset-title {
   margin: 0;
 
@@ -38,6 +47,15 @@
   line-height: 30px;
   text-transform: uppercase;
   color: #d22856;
+}
+
+@mixin fieldset-title--tablet {
+  display: flex;
+  box-sizing: border-box;
+  height: 38px;
+  padding-top: 4px;
+
+  background-color: #ffffff;
 }
 
 @mixin fieldset-desc {
@@ -81,4 +99,97 @@
 
 .form__extra-text {
   display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 660px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 0 20px;
+    padding-top: 95px;
+  }
+
+  .form__desc {
+    order: 1;
+    width: 490px;
+    margin-bottom: 65px;
+
+    font-size: 18px;
+  }
+
+  .form__full-name {
+    order: 2;
+  }
+
+  .form__item-3 {
+    order: 3;
+  }
+
+  .form__contact-info {
+    order: 4;
+  }
+
+  .form__item-5 {
+    order: 5;
+  }
+
+  .form__essay {
+    order: 6;
+  }
+
+  .form__container {
+    flex-grow: 1;
+    background-color: #ffffff;
+  }
+
+  .form__text {
+    display: inline;
+  }
+
+  .form__action {
+    order: 7;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .form__action input {
+    @include button;
+    width: 300px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin-bottom: 0;
+    padding: 0 130px;
+    padding-top: 95px;
+  }
+
+  .form__desc {
+    width: 754px;
+    margin-bottom: 58px;
+  }
+
+  .form__item-3 {
+    flex-grow: 0;
+  }
+
+  .form__action {
+    flex-grow: 1;
+  }
+
+  .form__extra-text {
+    display: inline;
+  }
 }

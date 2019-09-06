@@ -3,10 +3,15 @@
 
   box-sizing: border-box;
   width: 280px;
+  margin: 0 auto;
+  margin-top: 20px;
+
+  font-size: 0;
 }
 
 .сard--best {
   width: 320px;
+  margin: 0;
 }
 
 .сard--best .card__inner {
@@ -69,8 +74,9 @@
   align-items: center;
 }
 
-.card__icon {
-  display: block;
+.card__like::before {
+  content: "";
+
   width: 13px;
   height: 12px;
   margin-right: 19px;
@@ -80,6 +86,179 @@
 
 .card__like-count {
   font-size: 12px;
+  line-height: 24px;
   text-transform: uppercase;
   color: #d22856;
+}
+
+@media (min-width: $tablet-width) {
+  .card {
+    width: 300px;
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .card__image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .card__image--1 {
+    content: url("../img/photo-car-tablet@1x.jpg");
+  }
+
+  .card__image--2 {
+    content: url("../img/photo-drumset-tablet@1x.jpg");
+  }
+
+  .card__image--3 {
+    content: url("../img/photo-window-tablet@1x.jpg");
+  }
+
+  .card__image--4 {
+    content: url("../img/photo-fair-tablet@1x.jpg");
+  }
+
+  .card__image--5 {
+    content: url("../img/photo-pov-tablet@1x.jpg");
+  }
+
+  .card__image--6 {
+    content: url("../img/photo-wing-tablet@1x.jpg");
+  }
+
+  .card__button {
+    top: 57px;
+    right: 20px;
+  }
+
+  .card__inner {
+    position: relative;
+
+    width: 300px;
+    height: 155px;
+    padding: 0;
+    padding-top: 25px;
+    padding-left: 27px;
+  }
+
+  .card__desc {
+    width: 235px;
+    margin-bottom: 23px;
+  }
+
+  .card__like {
+    flex-direction: row-reverse;
+    width: 240px;
+    justify-content: space-between;
+  }
+
+  .card__like::before {
+    margin: 0;
+  }
+
+  .сard--best {
+    width: auto;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .card__image--best {
+    content: url("../img/panorama-tablet@1x.jpg");
+
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+  }
+
+  .сard--best .card__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 620px;
+    height: 121px;
+  }
+
+  .сard--best .card__desc {
+    order: 2;
+    width: 510px;
+  }
+
+  .сard--best .card__like {
+    width: 118px;
+    margin-right: 29px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card {
+    width: 300px;
+    margin: 0;
+  }
+
+  .card:nth-child(n - 4) {
+    margin-top: 54px;
+  }
+
+  .card__image {
+    height: 400px;
+  }
+
+  .card__image--1 {
+    content: url("../img/photo-car-desktop@1x.jpg");
+  }
+
+  .card__image--2 {
+    content: url("../img/photo-drumset-desktop@1x.jpg");
+  }
+
+  .card__image--3 {
+    content: url("../img/photo-window-desktop@1x.jpg");
+  }
+
+  .card__image--4 {
+    content: url("../img/photo-fair-desktop@1x.jpg");
+  }
+
+  .card__image--5 {
+    content: url("../img/photo-pov-desktop@1x.jpg");
+  }
+
+  .card__image--6 {
+    content: url("../img/photo-wing-desktop@1x.jpg");
+  }
+
+  .card__button {
+    top: 54px;
+    right: 130px;
+  }
+
+  .сard--best {
+    width: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .card__image--best {
+    content: url("../img/panorama-desktop@1x.jpg");
+
+    max-width: 1200px;
+    height: auto;
+  }
+
+  .сard--best .card__inner {
+    width: 940px;
+    height: 96px;
+  }
+
+  .сard--best .card__desc {
+    width: 863px;
+  }
+
+  .сard--best .card__like {
+    width: 119px;
+    margin-right: 31px;
+  }
 }

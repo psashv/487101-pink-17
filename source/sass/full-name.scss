@@ -1,0 +1,77 @@
+.full-name {
+  @include fieldset-reset;
+  width: 280px;
+  margin-bottom: 44px;
+}
+
+.full-name__item {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.full-name__item:last-child {
+  margin-bottom: 0;
+}
+
+.full-name__desc {
+  @include fieldset-title;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+.full-name__item input {
+  width: 256px;
+  height: 59px;
+  padding: 0;
+  padding-left: 20px;
+
+  border: 2px solid #e5e5e5;
+}
+
+.full-name__item input::placeholder {
+  @include fieldset-desc;
+}
+
+@media (min-width: $tablet-width) {
+  .full-name {
+    width: auto;
+    margin: 0;
+    margin-bottom: 48px;
+  }
+
+  .full-name__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 52px;
+  }
+
+  .full-name__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .full-name__desc {
+    margin: 0;
+    margin-right: 20px;
+  }
+
+  .full-name__item input {
+    display: flex;
+    flex-grow: 1;
+    width: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .full-name {
+    width: 435px;
+    margin-bottom: 47px;
+  }
+
+  .full-name__item {
+    margin-bottom: 54px;
+  }
+
+  .full-name__item:last-child {
+    margin-bottom: 0;
+  }
+}

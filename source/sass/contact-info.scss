@@ -1,0 +1,149 @@
+.contact-info {
+  @include fieldset-reset;
+  box-sizing: border-box;
+  width: 320px;
+  padding: 44px 20px;
+  padding-top: 30px;
+}
+
+@media (max-width: calc(#{$tablet-width} - 1px)) {
+  .contact-info__title {
+    @include visually-hidden;
+  }
+}
+
+.contact-info__item {
+  display: block;
+  margin-bottom: 18px;
+}
+
+.contact-info__item:last-child {
+  margin-bottom: 0;
+}
+
+.contact-info__desc {
+  @include fieldset-title;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
+.contact-info__item input {
+  width: 256px;
+  height: 59px;
+  padding: 0;
+  padding-left: 20px;
+
+  border: 2px solid #e5e5e5;
+}
+
+.contact-info__item input::placeholder {
+  @include fieldset-desc;
+}
+
+@media (min-width: $tablet-width) {
+  .contact-info {
+    @include fieldset-edit;
+    width: auto;
+    margin-bottom: 47px;
+    padding-bottom: 25px;
+  }
+
+  .contact-info__title {
+    @include fieldset-title;
+    @include fieldset-title--tablet;
+    margin-bottom: 25px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    text-align: center;
+  }
+
+  .contact-info__item {
+    position: relative;
+
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 30px;
+  }
+
+  .contact-info__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .contact-info__desc {
+    margin-bottom: 0;
+  }
+
+  .contact-info__item input {
+    width: auto;
+    margin-bottom: 5px;
+    padding-left: 18px;
+  }
+
+  .contact-info__item::before {
+    position: absolute;
+    top: 1px;
+    right: 0;
+    content: "";
+
+    width: 60px;
+    height: 60px;
+
+    background-color: #e5e5e5;
+  }
+
+  .contact-info__item--phone::after {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    content: "";
+
+    width: 20px;
+    height: 19px;
+
+    background: url("../img/icon-phone.svg");
+  }
+
+  .contact-info__item--email::after {
+    position: absolute;
+    top: 25px;
+    right: 23px;
+    content: "";
+
+    width: 18px;
+    height: 13px;
+
+    background: url("../img/icon-mail.svg");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact-info {
+    width: auto;
+    min-width: 900px;
+    padding-bottom: 10px;
+  }
+
+  .contact-info__title {
+    margin-bottom: 24px;
+  }
+
+  .contact-info__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact-info__item {
+    position: relative;
+
+    flex-direction: column-reverse;
+    margin-bottom: 0;
+  }
+
+  .contact-info__item input {
+    box-sizing: border-box;
+    min-width: 371px;
+    height: 63px;
+    margin-bottom: 10px;
+  }
+}

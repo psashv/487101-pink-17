@@ -23,3 +23,25 @@
   font-size: 14px;
   color: #283645;
 }
+
+@media (min-width: $tablet-width) {
+  .site-footer {
+    flex-direction: row;
+    width: 660px;
+    height: 127px;
+    padding: 40px 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-footer {
+    flex-direction: row;
+    width: 1200px;
+    height: 197px;
+    padding: 70px 130px;
+  }
+
+  .site-footer__logo {
+    content: url("../img/logo-pink-blue-desktop.svg");
+  }
+}

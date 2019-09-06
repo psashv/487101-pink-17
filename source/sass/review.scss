@@ -1,0 +1,152 @@
+.review {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 45px;
+  padding-bottom: 11px;
+}
+
+.review__info {
+  margin-bottom: 10px;
+}
+
+.review__subtitle {
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.review__desc {
+  display: none;
+}
+
+.review__text {
+  margin: 0;
+  margin-bottom: 35px;
+
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: #283645;
+}
+
+@media (min-width: $tablet-width) {
+  .review {
+    width: 660px;
+    padding: 0 20px;
+    padding-top: 50px;
+  }
+
+  .review__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review__info {
+    order: 1;
+    margin-bottom: 40px;
+  }
+
+  .review__subtitle {
+    margin-bottom: 5px;
+
+    font-size: 20px;
+  }
+
+  .review__desc {
+    display: block;
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    color: #283645;
+  }
+
+  .review__text {
+    font-size: 18px;
+  }
+
+  .review__switch {
+    order: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review {
+    position: relative;
+
+    width: 1200px;
+    padding: 0 130px;
+    padding-top: 72px;
+    padding-bottom: 35px;
+
+    background-color: #ffffff;
+  }
+
+  .review::before {
+    content: url("../img/icon-quotes.svg");
+
+    display: block;
+    width: 79px;
+    height: 63px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+  }
+
+  .review__inner {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .review__inner::before {
+    position: absolute;
+    top: 213px;
+    left: 130px;
+    content: url("../img/icon-review-arrow-left.svg");
+
+    width: 22px;
+    height: 41px;
+
+    opacity: 0.3;
+    cursor: pointer;
+  }
+
+  .review__inner::after {
+    position: absolute;
+    top: 213px;
+    right: 130px;
+    content: url("../img/icon-review-arrow-right.svg");
+
+    width: 22px;
+    height: 41px;
+
+    opacity: 0.3;
+    cursor: pointer;
+  }
+
+
+  .review__info {
+    margin-bottom: 0;
+  }
+
+  .review__subtitle {
+    font-size: 24px;
+  }
+
+  .review__desc {
+    font-size: 18px;
+  }
+
+  .review__text {
+    width: 687px;
+  }
+
+  .review__switch {
+    display: none;
+  }
+}

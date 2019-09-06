@@ -1,0 +1,66 @@
+.essay {
+  @include fieldset-reset;
+  box-sizing: border-box;
+  width: 320px;
+  margin-top: 32px;
+  margin-bottom: 48px;
+  padding: 0 20px;
+}
+
+.essay__title {
+  @include fieldset-title;
+  margin-bottom: 9px;
+
+  text-align: center;
+}
+
+.essay__text {
+  box-sizing: border-box;
+  width: 280px;
+  height: 201px;
+  padding: 18px;
+
+  border: 2px solid #e5e5e5;
+}
+
+.essay__text::placeholder {
+  @include fieldset-desc;
+}
+
+@media (min-width: $tablet-width) {
+  .essay {
+    @include fieldset-edit;
+    width: auto;
+    margin-bottom: 67px;
+    padding-bottom: 51px;
+  }
+
+  .essay__title {
+    @include fieldset-title--tablet;
+    margin-bottom: 27px;
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+
+  .essay__text {
+    width: 500px;
+    height: 189px;
+    padding: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .essay {
+    padding-bottom: 41px;
+  }
+
+  .essay__title {
+    margin-bottom: 24px;
+  }
+
+  .essay__text {
+    width: 820px;
+    height: 128px;
+    padding: 18px;
+  }
+}

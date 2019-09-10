@@ -24,3 +24,12 @@
   border: 3px solid #283645;
   opacity: 1;
 }
+
+.switch__item:not(.switch__item--active):hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.switch__item:not(.switch__item--active):active {
+  opacity: 0.1;
+}

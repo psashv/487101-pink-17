@@ -38,6 +38,16 @@
   background-color: #ffffff;
 }
 
+.radio__item:hover .radio__action {
+  border-color: #283645;
+  outline: none;
+}
+
+.radio__item:active .radio__action {
+  border-color: #d22856;
+  outline: none;
+}
+
 .radio__action::before {
   content: "";
 

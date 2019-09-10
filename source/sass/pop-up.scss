@@ -1,0 +1,179 @@
+.pop-up {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 40px;
+
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.pop-up--error {
+  padding-bottom: 50px;
+}
+
+.pop-up__title {
+  margin: 0;
+  margin-bottom: 35px;
+
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.pop-up__desc {
+  width: 265px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+  text-align: center;
+}
+
+.pop-up__inner {
+  box-sizing: border-box;
+  height: 163px;
+  padding-top: 48px;
+
+  background-color: #f2f2f2;
+}
+
+.pop-up--error .pop-up__inner {
+  height: auto;
+  padding-top: 0;
+
+  background-color: #ffffff;
+}
+
+.pop-up__button {
+  @include button;
+  width: 280px;
+  height: 63px;
+  margin: 0 auto;
+  margin-bottom: 52px;
+
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+
+  background-color: #2aab6d;
+}
+
+.pop-up__button:hover {
+  background-color: #1c9b5e;
+}
+
+.pop-up__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.pop-up--error .pop-up__button {
+  margin-bottom: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .pop-up {
+    width: 460px;
+    padding-top: 35px;
+  }
+
+  .pop-up--error {
+    padding-bottom: 52px;
+  }
+
+  .pop-up__title {
+    width: 220px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .pop-up__desc {
+    width: 306px;
+
+    font-size: 18px;
+  }
+
+  .pop-up__br {
+    display: none;
+  }
+
+  .pop-up__button {
+    width: 300px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .pop-up {
+    width: 460px;
+    padding-top: 35px;
+  }
+
+  .pop-up--error {
+    padding-bottom: 52px;
+  }
+
+  .pop-up__title {
+    width: 220px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .pop-up__desc {
+    width: 306px;
+
+    font-size: 18px;
+  }
+
+  .pop-up__br {
+    display: none;
+  }
+
+  .pop-up__button {
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pop-up {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 780px;
+    height: 377px;
+    padding-top: 40px;
+  }
+
+  .pop-up--error {
+    padding-bottom: 0;
+  }
+
+  .pop-up__title {
+    width: auto;
+    margin-bottom: 30px;
+  }
+
+  .pop-up__desc {
+    width: 393px;
+  }
+
+  .pop-up__inner {
+    margin-top: auto;
+  }
+
+  .pop-up--error .pop-up__inner {
+    height: 163px;
+    padding-top: 48px;
+
+    background-color: #f2f2f2;
+  }
+
+  .pop-up--close .pop-up__button {
+    width: 460px;
+  }
+}

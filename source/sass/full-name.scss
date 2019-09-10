@@ -32,6 +32,16 @@
   @include fieldset-desc;
 }
 
+.full-name__item input:hover {
+  border-color: #283645;
+  outline: none;
+}
+
+.full-name__item input:active {
+  border-color: #d22856;
+  outline: none;
+}
+
 @media (min-width: $tablet-width) {
   .full-name {
     width: auto;

@@ -18,10 +18,21 @@
   margin: 0 auto;
   margin-bottom: 32px;
 
+  font-size: 18px;
   text-transform: none;
 
   border: 3px solid #ffffff;
   border-radius: 30px;
+}
+
+.download__button:hover {
+  color: #d22856;
+
+  background-color: #ffffff;
+}
+
+.download__button:active {
+  color: rgba(210, 40, 86, 0.3);
 }
 
 .download__list {

@@ -103,32 +103,34 @@
     margin: 0 auto;
   }
 
-  .review__inner::before {
+  .review__arrow {
     position: absolute;
     top: 213px;
+
+    width: 22px;
+    height: 41px;
+
+    opacity: 0.3;
+    cursor: pointer;
+  }
+
+  .review__arrow--left {
     left: 130px;
     content: url("../img/icon-review-arrow-left.svg");
-
-    width: 22px;
-    height: 41px;
-
-    opacity: 0.3;
-    cursor: pointer;
   }
 
-  .review__inner::after {
-    position: absolute;
-    top: 213px;
+  .review__arrow--right {
     right: 130px;
     content: url("../img/icon-review-arrow-right.svg");
-
-    width: 22px;
-    height: 41px;
-
-    opacity: 0.3;
-    cursor: pointer;
   }
 
+  .review__arrow:hover {
+    opacity: 0.6;
+  }
+
+  .review__arrow:active {
+    opacity: 0.1;
+  }
 
   .review__info {
     margin-bottom: 0;

@@ -59,6 +59,14 @@
   background-color: #2aab6d;
 }
 
+.pop-up__button:hover {
+  background-color: #1c9b5e;
+}
+
+.pop-up__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .pop-up--error .pop-up__button {
   margin-bottom: 0;
 }

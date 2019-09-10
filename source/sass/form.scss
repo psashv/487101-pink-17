@@ -84,6 +84,22 @@
   background-color: #2aab6d;
 }
 
+.form__action input:hover {
+  border-color: #1c9b5e;
+  background-color: #1c9b5e;
+}
+
+.form__action input:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.form__action input:disabled {
+  color: #ffffff;
+
+  border-color: #e5e5e5;
+  background-color: #e5e5e5;
+}
+
 .form__note {
   margin: 0;
 

@@ -43,7 +43,18 @@
   font-size: 24px;
   font-weight: 300;
   text-align: center;
+  text-decoration: none;
   color: #d22856;
+}
+
+.contacts__desc--mail:hover {
+  color: #283645;
+  text-decoration: underline;
+}
+
+.contacts__desc--mail:active {
+  color: rgba(40, 54, 69, 0.3);
+  text-decoration: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -90,6 +101,8 @@
   }
 
   .contacts__title {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 65px;
 
     font-size: 50px;

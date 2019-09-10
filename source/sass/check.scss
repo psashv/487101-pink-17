@@ -48,6 +48,16 @@
   background-color: #ffffff;
 }
 
+.check__item:hover .check__action {
+  border-color: #283645;
+  outline: none;
+}
+
+.check__item:active .check__action {
+  border-color: #d22856;
+  outline: none;
+}
+
 .check__action::before {
   display: none;
   content: "";

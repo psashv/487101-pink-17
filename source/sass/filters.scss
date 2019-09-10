@@ -72,6 +72,10 @@
   cursor: pointer;
 }
 
+.filters__line:active::before {
+  background-color: #d22856;
+}
+
 @media (max-width: calc(#{$tablet-width} - 1px)) {
   .filters__item:first-child .filters__line {
     position: absolute;
@@ -111,6 +115,16 @@
   border-radius: 26px;
 }
 
+.filters__link--confirm:hover {
+  color: #ffffff;
+
+  background-color: #d22856;
+}
+
+.filters__link--confirm:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .filters__link:first-child {
   margin-bottom: 12px;
 }
@@ -120,6 +134,16 @@
 
   border-color: #283645;
   opacity: 0.1;
+}
+
+.filters__link--decline:hover {
+  opacity: 0.3;
+}
+
+.filters__link--decline:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #283645;
 }
 
 @media (min-width: $tablet-width) {

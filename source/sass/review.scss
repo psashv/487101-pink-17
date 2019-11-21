@@ -7,6 +7,10 @@
   padding-bottom: 11px;
 }
 
+.review__arrow {
+  display: none;
+}
+
 .review__info {
   margin-bottom: 10px;
 }
@@ -107,6 +111,7 @@
     position: absolute;
     top: 213px;
 
+    display: block;
     width: 22px;
     height: 41px;
 

@@ -7,6 +7,15 @@ var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+var pug = require("gulp-pug");
+
+gulp.task("pug", function () {
+  return gulp.src("source/pug/*.pug")
+  .pipe(pug({
+    pretty: true
+  }))
+  .pipe(gulp.dest("source/"));
+});
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -31,7 +40,7 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
-  gulp.watch("source/*.html").on("change", server.reload);
+  gulp.watch("source/pug/**/*.pug", gulp.series("pug")).on("change", server.reload);
 });
 
-gulp.task("start", gulp.series("css", "server"));
+gulp.task("start", gulp.series("css", "pug", "server"));

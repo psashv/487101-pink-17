@@ -10,6 +10,10 @@
   padding: 40px 0;
 }
 
+.site-footer--main-page {
+  display: none;
+}
+
 .site-footer__item:last-child {
   display: flex;
   align-items: center;
@@ -35,6 +39,10 @@
     width: 660px;
     height: 127px;
     padding: 40px 20px;
+  }
+
+  .site-footer--main-page {
+    display: flex;
   }
 }
 

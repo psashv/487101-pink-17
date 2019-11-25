@@ -1,0 +1,16 @@
+include switch
+
+mixin review
+  section.review
+    h2.visually-hidden Отзывы
+    img.review__arrow.review__arrow--left(src="img/icon-review-arrow-left.svg" alt="Влево" width="22" height="41")
+    img.review__arrow.review__arrow--right(src="img/icon-review-arrow-right.svg" alt="Вправо" width="22" height="41")
+    .review__inner
+      .review__info
+        h3.review__subtitle Николай Петров
+        p.review__desc 25 лет, водитель трамвая
+      p.review__text
+        | «Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+        | привычные серые вещи! А еще я познакомился со своей будущей женой в
+        | комментариях к выложенной фотографии!»
+      +switch().review__switch

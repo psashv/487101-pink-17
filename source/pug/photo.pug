@@ -1,0 +1,36 @@
+extends layouts/layout
+include components/header
+include components/footer
+
+block title
+  | Пинк - Фотографии
+
+block header
+  +header()
+
+block main
+  main
+    include components/photo-wrapper
+
+block footer
+  +footer()
+
+//-
+//-     </div>
+//-   </main>
+//-   <footer class="site-footer">
+//-     <img class="site-footer__item site-footer__logo" src="img/logo-pink-blue-mobile.svg" alt="footer logo" width="147"
+//-       height="40">
+//-     <div class="social site-footer__item">
+//-       <a class="social__icon social__icon--twitter" href="https://twitter.com"></a>
+//-       <a class="social__icon social__icon--facebook" href="https://facebook.com"></a>
+//-       <a class="social__icon social__icon--youtube" href="https://youtube.com"></a>
+//-     </div>
+//-     <a class="site-footer__item" href="https://htmlacademy.ru">
+//-       <span class="site-footer__text">Разработано</span>
+//-       <img class="site-footer__academy-icon" src="img/logo-htmlacademy.svg" alt="htmlacademy" width="27" height="34">
+//-     </a>
+//-   </footer>
+//- </body>
+
+//- </html>

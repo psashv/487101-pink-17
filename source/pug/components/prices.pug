@@ -1,0 +1,60 @@
+include switch
+
+mixin prices
+  section.prices
+    h1.visually-hidden Цены на услуги
+    table.prices__table
+      tr.prices__row.prices__row--headline
+        th.prices__elem.prices__elem--invisible
+        th.prices__elem
+          span.prices__name база
+          span.prices__desc 1,99 usd
+        th.prices__elem.prices__elem--hot
+          span.prices__name стандарт
+          span.prices__desc 3,99 usd
+        th.prices__elem
+          span.prices__name анлим
+          span.prices__desc 9,99 usd
+      tr.prices__row
+        td.prices__elem.prices__elem--type Розовый фильтр
+        td.prices__elem
+          span.prices__text Розовый фильтр
+          img.prices__check-image.prices__check-image--yes(src="img/icon-yes.svg" alt="yes" width="31"
+            height="21")
+        td.prices__elem
+          span.prices__text Розовый фильтр
+          img.prices__check-image.prices__check-image--yes(src="img/icon-yes.svg" alt="yes" width="31"
+            height="21")
+        td.prices__elem
+          span.prices__text Розовый фильтр
+          img.prices__check-image.prices__check-image--yes(src="img/icon-yes.svg" alt="yes" width="31"
+            height="21")
+      tr.prices__row
+        td.prices__elem.prices__elem--type Смайлики
+        td.prices__elem
+          span.prices__text Смайлики
+          img.prices__check-image.prices__check-image--no(src="img/icon-no.svg" alt="no" width="27"
+            height="26")
+        td.prices__elem
+          span.prices__text Смайлики
+          img.prices__check-image.prices__check-image--ye( src="img/icon-yes.svg" alt="yes" width="31"
+            height="21")
+        td.prices__elem
+          span.prices__text Смайлики
+          img.prices__check-image.prices__check-image--ye( src="img/icon-yes.svg" alt="yes" width="31"
+            height="21")
+      tr.prices__row
+        td.prices__elem.prices__elem--type Комментарии
+        td.prices__elem
+          span.prices__text Комментарии
+          img.prices__check-image.prices__check-image--no(src="img/icon-no.svg" alt="no" width="27"
+            height="26")
+        td.prices__elem
+          span.prices__text Комментарии
+          img.prices__check-image.prices__check-image--no(src="img/icon-no.svg" alt="no" width="27"
+            height="26")
+        td.prices__elem
+          span.prices__text Комментарии
+          img.prices__check-image.prices__check-image--yes(src="img/icon-yes.svg" alt="yes" width="31"
+            height="21")
+    +switch().prices__switch

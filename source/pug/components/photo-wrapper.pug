@@ -1,0 +1,66 @@
+include card
+
+.photo-wrapper
+  p.photo-wrapper__desc
+    | Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+  .card(class="сard--best")
+    img.card__image.card__image--best(src="img/panorama-mobile@1x.jpg" alt="user photo" width="320" height="137")
+    .card__button панорама дня
+    .card__inner
+      p.card__user
+        span.card__name
+          | Анна
+        span.card__user-status
+          |  (5 минут назад)
+      p.card__desc Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в
+        | перископе, задавайте свои вопросы!
+      .card__like
+        span.card__like-count нравится: 215
+  -
+    const dataCards = [
+      {
+        link: 'photo-car-mobile@1x.jpg',
+        name: 'Левон ',
+        time: '(5 часов',
+        desc: 'Вчера он на луну летал, сегодня в руки к нам попал.',
+        likes: '356'
+      },
+      {
+        link: 'photo-drumset-mobile@1x.jpg',
+        name: 'Антон ',
+        time: '(12 часов',
+        desc: 'Соседи будут рады!',
+        likes: '666'
+      },
+      {
+        link: 'photo-window-mobile@1x.jpg',
+        name: 'Борис ',
+        time: '(20 часов',
+        desc: 'Здесь могла быть ваша цитата о высоком и вечном.',
+        likes: '215'
+      },
+      {
+        link: 'photo-fair-mobile@1x.jpg',
+        name: 'Сергей ',
+        time: '(25 часов',
+        desc: 'Самая кубанская в мире!',
+        likes: '4'
+      },
+      {
+        link: 'photo-pov-mobile@1x.jpg',
+        name: 'Максим ',
+        time: '(40 часов',
+        desc: 'Где снег-то?',
+        likes: '150'
+      },
+      {
+        link: 'photo-wing-mobile@1x.jpg',
+        name: 'Надежда ',
+        time: '(45 часов',
+        desc: 'Всем GM и взаимные лайки!',
+        likes: '2560'
+      }
+    ]
+  .photo-wrapper__inner
+    +card(dataCards)
+

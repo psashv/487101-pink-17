@@ -1,0 +1,19 @@
+extends layouts/layout
+include components/header
+include components/footer
+
+block title
+  | Пинк - Конкурс
+
+block header
+  +header()
+    block header-main
+      <h1 class="site-header__title site-header__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
+
+block main
+  main
+    include components/form
+    include components/pop-up
+
+block footer
+  +footer()

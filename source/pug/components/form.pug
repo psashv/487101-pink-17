@@ -1,0 +1,20 @@
+form.form(action="https://echo.htmlacademy.ru" method="post")
+  p.form__desc
+    | Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+    span.form__text Пожалуйста, заполните форму ниже:
+  include full-name
+  .form__container.form__item-5
+    include check
+  include contact-info
+  .form__container.form__item-3
+    include radio
+  include essay
+  .form__action
+    input(type="submit" value="отправить форму")
+    p.form__note
+      span.form__effect
+        | *
+      | &#8212; обязательные
+      span.form__extra-text
+        | для заполнения
+      |  поля

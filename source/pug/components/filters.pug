@@ -1,0 +1,21 @@
+section.filters
+  h2.visually-hidden Фильтры фотографии
+  .filters__desc
+    p.filters__text Затмите их всех!
+    p.filters__text Выкладывайте все, что накопилось в телефоне!
+  .filters__container
+    img.filters__image(src="img/photo-road-mobile@1x.jpg" alt="Фотография" width="280" height="374")
+    .filters__inner
+      ul.filters__list
+        li.filters__item
+          img.filters__icon(src="img/icon-crop.svg" alt="Тип фильтра" width="44" height="44")
+          .filters__line
+        li.filters__item
+          img.filters__icon(src="img/icon-fill.svg" alt="Тип фильтра" width="48" height="43")
+          .filters__line
+        li.filters__item
+          img.filters__icon(src="img/icon-contrast.svg" alt="Тип фильтра" width="32" height="32")
+          .filters__line
+      .filters__action
+        a.filters__link.filters__link--confirm(href="#") Запостить
+        a.filters__link.filters__link--decline(href="#") Отмена

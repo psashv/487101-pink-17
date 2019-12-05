@@ -49,3 +49,11 @@
   width: 15px;
   height: 13px;
 }
+
+@media (min-width: $tablet-width) {
+  .social {
+    width: 180px;
+    margin-right: -6px;
+    margin-bottom: 10px;
+  }
+}

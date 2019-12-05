@@ -38,11 +38,21 @@
     flex-direction: row;
     width: 660px;
     height: 127px;
-    padding: 40px 20px;
+    padding: 0 20px;
   }
 
   .site-footer--main-page {
     display: flex;
+  }
+
+  .site-footer__logo {
+    margin-bottom: 22px;
+  }
+
+  .site-footer__text {
+    margin-bottom: 7px;
+
+    font-size: 18px;
   }
 }
 

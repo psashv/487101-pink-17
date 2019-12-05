@@ -24,7 +24,7 @@
   .map::before {
     width: 660px;
     height: 123px;
-    background: url("../img/triangle-map@1x.png") -270px -3px no-repeat;
+    background: url("../img/triangle-map@1x.png") -270px -1px no-repeat;
   }
 
   .map img {
@@ -38,6 +38,7 @@
 @media (min-width: $desktop-width) {
   .map {
     width: 1200px;
+    margin-top: 3px;
   }
 
   .map::before {

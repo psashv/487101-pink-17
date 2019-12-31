@@ -36,9 +36,9 @@
 .card__inner {
   box-sizing: border-box;
   width: 280px;
-  padding-top: 25px;
+  padding-top: 22px;
   padding-left: 17px;
-  padding-bottom: 28px;
+  padding-bottom: 20px;
 
   color: #283645;
 
@@ -47,7 +47,7 @@
 
 .card__user {
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .card__name {
@@ -63,7 +63,7 @@
 
 .card__desc {
   margin: 0;
-  margin-bottom: 19px;
+  margin-bottom: 10px;
 
   font-size: 14px;
   line-height: 24px;
@@ -138,7 +138,7 @@
     width: 300px;
     height: 155px;
     padding: 0;
-    padding-top: 25px;
+    padding-top: 28px;
     padding-left: 27px;
   }
 
@@ -161,6 +161,7 @@
     width: auto;
     max-width: 700px;
     margin: 0 auto;
+    margin-bottom: 30px;
   }
 
   .card__image--best {
@@ -169,7 +170,7 @@
     display: block;
     width: 100%;
     max-width: 700px;
-    height: auto;
+    height: 509px;
   }
 
   .сard--best .card__inner {
@@ -179,11 +180,13 @@
     justify-content: space-between;
     width: 620px;
     height: 121px;
+    padding-top: 24px;
   }
 
   .сard--best .card__desc {
     order: 2;
     width: 510px;
+    margin-top: -5px;
   }
 
   .сard--best .card__like {

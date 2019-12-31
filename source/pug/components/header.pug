@@ -1,0 +1,12 @@
+mixin header()
+  header.site-header(class!=attributes.class)
+    nav.site-nav
+      h2.visually-hidden Навигация сайта
+      div.site-nav__logo
+        img.site-nav__logo-image(src="img/logo-pink-white-mobile.svg" alt="logo" width="75" height="22")
+      div.site-nav__list
+        a.site-nav__item(href="index.html") Главная
+        a.site-nav__item(href="photo.html") Фотографии
+        a.site-nav__item(href="contest.html") Конкурс
+        a.site-nav__item(href="https://htmlacademy.ru/intensive/adaptive") HTML Academy
+    block

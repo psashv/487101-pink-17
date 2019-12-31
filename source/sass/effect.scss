@@ -11,8 +11,8 @@
   width: 660px;
   height: 387px;
   margin: 0 auto;
-  padding-top: 100px;
-  padding-left: 330px;
+  padding-top: 96px;
+  padding-left: 329px;
 }
 
 .effect img {
@@ -53,16 +53,16 @@
 @media (min-width: $desktop-width) {
   .effect {
     width: 1200px;
-    height: 429px;
+    height: 415px;
     margin-top: -82px;
-    padding-top: 110px;
-    padding-left: 494px;
+    padding-top: 96px;
+    padding-left: 496px;
 
     background-color: #f2f2f2;
   }
 
   .effect img {
-    top: 17px;
+    top: 3px;
     left: 131px;
     content: url("../img/timer-desktop@1x.png");
     width: 298px;
@@ -70,7 +70,7 @@
   }
 
   .effect__title {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 
     line-height: 30px;
   }
@@ -99,5 +99,6 @@
   .effect__link {
     font-size: 18px;
     line-height: 30px;
+    text-underline-position: under;
   }
 }

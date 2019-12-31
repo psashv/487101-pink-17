@@ -1,0 +1,12 @@
+mixin card(data)
+  - var i = 1
+  each item in data
+    .card
+      img.card__image(class="card__image--"+i++ src="img/" + item.link alt="user photo" width="280" height="180")
+      .card__inner
+        p.card__user
+          span.card__name= item.name
+          span.card__user-status= item.time + " назад)"
+        p.card__desc= item.desc
+        div.card__like
+          span.card__like-count= "нравится: " + item.likes

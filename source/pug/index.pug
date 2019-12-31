@@ -1,0 +1,30 @@
+extends layouts/layout
+include components/header
+include components/effect
+include components/review
+include components/prices
+include components/contacts
+include components/map
+include components/footer
+
+block title
+  | Пинк - Главная
+
+block header
+  +header().site-header--main-page
+    block header-main
+      img.site-header__image(src="img/iphone-hand-mobile@1x.png" alt="hand with phone" width="258" height="286")
+    block download
+      include components/download
+
+block main
+  main
+    include components/advantages
+    +effect()
+    +review()
+    +prices()
+    +contacts()
+    +map()
+
+block footer
+  +footer().site-footer--main-page

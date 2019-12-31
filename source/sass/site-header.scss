@@ -4,27 +4,32 @@
   margin: 0 auto;
   color: #ffffff;
 
-  background: #000000 url("../img/bg-back-mobile@1x.jpg") 0 258px no-repeat;
+  background: #000000 url("../img/bg-back-mobile@1x.jpg") 0 259px no-repeat;
   background-size: 320px 462px;
+}
+
+.site-header--main-page {
+  overflow: hidden;
 }
 
 .site-header__image {
   box-sizing: border-box;
   width: 258px;
   height: 286px;
-  margin-top: 110px;
-  margin-bottom: -3px;
+  margin-top: 109px;
+  margin-bottom: -4px;
 }
 
 .site-header__title {
   box-sizing: border-box;
   width: 170px;
-  height: 171px;
+  height: 170px;
   margin: 0 auto;
-  padding-top: 35px;
+  padding-top: 29px;
 
   font-size: 24px;
   font-weight: 300;
+  line-height: 29px;
   text-align: center;
 }
 
@@ -38,8 +43,17 @@
 
     width: 660px;
 
-    background: #000000 url("../img/bg-back-tablet@1x.jpg") -270px 238px no-repeat;
+    background: #000000 url("../img/bg-back-tablet@1x.jpg") -270px 255px no-repeat;
     background-size: 1200px 729px;
+  }
+
+  .site-header__title {
+    width: 500px;
+    height: 329px;
+    padding-top: 69px;
+
+    font-size: 50px;
+    line-height: 60px;
   }
 
   .site-header__image {
@@ -49,8 +63,8 @@
 
     width: 700px;
     height: 545px;
-    margin-top: 74px;
-    right: -16px;
+    margin-top: 73px;
+    right: -20px;
   }
 }
 
@@ -60,6 +74,16 @@
 
     background: #000000 url("../img/bg-back-desktop@1x.jpg") -680px 0 no-repeat;
     background-size: 2560px 853px;
+  }
+
+  .site-header__title {
+    width: 360px;
+    height: 284px;
+    padding-top: 74px;
+  }
+
+  .site-header__title--form {
+    width: 800px;
   }
 
   .site-header__image {

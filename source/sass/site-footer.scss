@@ -10,6 +10,10 @@
   padding: 40px 0;
 }
 
+.site-footer--main-page {
+  display: none;
+}
+
 .site-footer__item:last-child {
   display: flex;
   align-items: center;
@@ -24,12 +28,29 @@
   color: #283645;
 }
 
+.site-footer__academy-icon {
+  width: 27px;
+  height: 34px;
+}
+
 @media (min-width: $tablet-width) {
   .site-footer {
     flex-direction: row;
     width: 660px;
     height: 127px;
-    padding: 40px 20px;
+    padding: 0 20px;
+  }
+
+  .site-footer--main-page {
+    display: flex;
+  }
+
+  .site-footer__logo {
+    margin-bottom: 22px;
+  }
+
+  .site-footer__text {
+    margin-bottom: 4px;
   }
 }
 
@@ -43,5 +64,11 @@
 
   .site-footer__logo {
     content: url("../img/logo-pink-blue-desktop.svg");
+  }
+
+  .site-footer__text {
+    margin-bottom: 7px;
+
+    font-size: 18px;
   }
 }

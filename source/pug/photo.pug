@@ -1,0 +1,18 @@
+extends layouts/layout
+include components/header
+include components/footer
+
+block title
+  | Пинк - Фотографии
+
+block header
+  +header()
+    block header-main
+      <h1 class="site-header__title">Фотографии пользователей</h1>
+
+block main
+  main
+    include components/photo-wrapper
+
+block footer
+  +footer()

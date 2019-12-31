@@ -1,6 +1,6 @@
 .download {
-  padding-top: 28px;
-  padding-bottom: 35px;
+  padding-top: 29px;
+  padding-bottom: 29px;
 
   background-color: #1d2631;
 }
@@ -39,10 +39,10 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  width: 205px;
+  width: 206px;
   height: 56px;
   margin: 0 auto;
-  margin-bottom: 28px;
+  margin-bottom: 23px;
 }
 
 .download__desc {
@@ -60,10 +60,10 @@
     position: relative;
     box-sizing: border-box;
     width: 300px;
-    height: 619px;
+    height: 618px;
     margin-left: 20px;
     padding: 0;
-    padding-top: 95px;
+    padding-top: 93px;
 
     background: none;
   }
@@ -71,10 +71,11 @@
   .download__title {
     width: 190px;
     margin: 0 auto;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 
     font-size: 40px;
     font-weight: 300;
+    line-height: 48px;
     text-align: center;
   }
 
@@ -82,10 +83,11 @@
     width: 300px;
     height: 55px;
     margin-bottom: 46px;
+    padding-bottom: 3px;
   }
 
   .download__list {
-    margin-bottom: 41px;
+    margin-bottom: 36px;
   }
 
   .download__desc {
@@ -100,25 +102,26 @@
     width: 300px;
     height: 743px;
     margin-left: 130px;
-    padding-top: 115px;
+    padding-top: 108px;
   }
 
   .download__title {
     width: 231px;
-    margin-bottom: 60px;
+    margin-bottom: 52px;
 
     font-size: 50px;
+    line-height: 60px;
   }
 
   .download__button {
-    height: 56px;
+    height: 55px;
     margin-bottom: 67px;
 
     font-size: 21px;
   }
 
   .download__list {
-    margin-bottom: 60px;
+    margin-bottom: 55px;
   }
 
   .download__desc {

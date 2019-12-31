@@ -1,172 +1,103 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>HTML Academy: Пинк</title>
-</head>
-
-<body>
-  <header class="site-header">
-    <nav class="site-nav">
-      <h2 class="visually-hidden">Навигация сайта</h2>
-      <div class="site-nav__logo">
-        <img class="site-nav__logo-image" src="img/logo-pink-white-mobile.svg" alt="logo" width="75" height="22">
-      </div>
-      <div class="site-nav__list">
-        <a class="site-nav__item" href="index.html">Главная</a>
-        <a class="site-nav__item" href="photo.html">Фотографии</a>
-        <a class="site-nav__item" href="form.html">Конкурс</a>
-        <a class="site-nav__item" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
-    </nav>
-    <h1 class="site-header__title">Фотографии пользователей</h1>
-  </header>
-  <main class="page-photo">
-    <p class="page-photo__desc">
-      Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
-    </p>
-    <div class="card сard--best page-photo__card--best">
-      <img class="card__image card__image--best" src="img/panorama-mobile@1x.jpg" alt="user photo" width="320" height="137">
-      <div class="card__button">панорама дня</div>
-      <div class="card__inner">
-        <p class="card__user">
-          <span class="card__name">Анна </span>
-          <span class="card__user-status">(5 минут назад)</span>
-        </p>
-        <p class="card__desc">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в
-          перископе, задавайте свои вопросы!</p>
-        <div class="card__like">
-          <span class="card__like-count">нравится: 215</span>
-        </div>
-      </div>
-    </div>
-    <div class="page-photo__wrapper">
-      <div class="card">
-        <img class="card__image card__image--1" src="img/photo-car-mobile@1x.jpg" alt="user photo" width="280" height="180">
-        <div class="card__inner">
-          <p class="card__user">
-            <span class="card__name">Левон </span>
-            <span class="card__user-status">(5 часов назад)</span>
-          </p>
-          <p class="card__desc">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          <div class="card__like">
-            <span class="card__like-count">нравится: 356</span>
+  <head>
+    <meta charset="utf-8">
+    <title>Пинк - Фотографии
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav">
+        <h2 class="visually-hidden">Навигация сайта</h2>
+        <div class="site-nav__logo"><img class="site-nav__logo-image" src="img/logo-pink-white-mobile.svg" alt="logo" width="75" height="22"/></div>
+        <div class="site-nav__list"><a class="site-nav__item" href="index.html">Главная</a><a class="site-nav__item" href="photo.html">Фотографии</a><a class="site-nav__item" href="contest.html">Конкурс</a><a class="site-nav__item" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></div>
+      </nav><h1 class="site-header__title">Фотографии пользователей</h1>
+    </header>
+    <main>
+      <div class="photo-wrapper">
+        <p class="photo-wrapper__desc">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <div class="card сard--best"><img class="card__image card__image--best" src="img/panorama-mobile@1x.jpg" alt="user photo" width="320" height="137">
+          <div class="card__button">панорама дня</div>
+          <div class="card__inner">
+            <p class="card__user"><span class="card__name">Анна</span><span class="card__user-status"> (5 минут назад)</span></p>
+            <p class="card__desc">
+              Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <div class="card__like"><span class="card__like-count">нравится: 215</span></div>
           </div>
         </div>
-      </div>
-      <div class="card">
-        <img class="card__image card__image--2" src="img/photo-drumset-mobile@1x.jpg" alt="user photo" width="280" height="180">
-        <div class="card__inner">
-          <p class="card__user">
-            <span class="card__name">Антон </span>
-            <span class="card__user-status">(12 часов назад)</span>
-          </p>
-          <p class="card__desc">Соседи будут рады!</p>
-          <div class="card__like">
-            <span class="card__like-count">нравится: 666</span>
-          </div>
+        <div class="photo-wrapper__inner">
+                <div class="card"><img class="card__image card__image--1" src="img/photo-car-mobile@1x.jpg" alt="user photo" width="280" height="180">
+                  <div class="card__inner">
+                    <p class="card__user"><span class="card__name">Левон </span><span class="card__user-status">(5 часов назад)</span></p>
+                    <p class="card__desc">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                    <div class="card__like"><span class="card__like-count">нравится: 356</span></div>
+                  </div>
+                </div>
+                <div class="card"><img class="card__image card__image--2" src="img/photo-drumset-mobile@1x.jpg" alt="user photo" width="280" height="180">
+                  <div class="card__inner">
+                    <p class="card__user"><span class="card__name">Антон </span><span class="card__user-status">(12 часов назад)</span></p>
+                    <p class="card__desc">Соседи будут рады!</p>
+                    <div class="card__like"><span class="card__like-count">нравится: 666</span></div>
+                  </div>
+                </div>
+                <div class="card"><img class="card__image card__image--3" src="img/photo-window-mobile@1x.jpg" alt="user photo" width="280" height="180">
+                  <div class="card__inner">
+                    <p class="card__user"><span class="card__name">Борис </span><span class="card__user-status">(20 часов назад)</span></p>
+                    <p class="card__desc">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                    <div class="card__like"><span class="card__like-count">нравится: 215</span></div>
+                  </div>
+                </div>
+                <div class="card"><img class="card__image card__image--4" src="img/photo-fair-mobile@1x.jpg" alt="user photo" width="280" height="180">
+                  <div class="card__inner">
+                    <p class="card__user"><span class="card__name">Сергей </span><span class="card__user-status">(25 часов назад)</span></p>
+                    <p class="card__desc">Самая кубанская в мире!</p>
+                    <div class="card__like"><span class="card__like-count">нравится: 4</span></div>
+                  </div>
+                </div>
+                <div class="card"><img class="card__image card__image--5" src="img/photo-pov-mobile@1x.jpg" alt="user photo" width="280" height="180">
+                  <div class="card__inner">
+                    <p class="card__user"><span class="card__name">Максим </span><span class="card__user-status">(40 часов назад)</span></p>
+                    <p class="card__desc">Где снег-то?</p>
+                    <div class="card__like"><span class="card__like-count">нравится: 150</span></div>
+                  </div>
+                </div>
+                <div class="card"><img class="card__image card__image--6" src="img/photo-wing-mobile@1x.jpg" alt="user photo" width="280" height="180">
+                  <div class="card__inner">
+                    <p class="card__user"><span class="card__name">Надежда </span><span class="card__user-status">(45 часов назад)</span></p>
+                    <p class="card__desc">Всем GM и взаимные лайки!</p>
+                    <div class="card__like"><span class="card__like-count">нравится: 2560</span></div>
+                  </div>
+                </div>
         </div>
-      </div>
-      <div class="card">
-        <img class="card__image card__image--3" src="img/photo-window-mobile@1x.jpg" alt="user photo" width="280" height="180">
-        <div class="card__inner">
-          <p class="card__user">
-            <span class="card__name">Борис </span>
-            <span class="card__user-status">(20 часов назад)</span>
-          </p>
-          <p class="card__desc">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <div class="card__like">
-            <span class="card__like-count">нравится: 215</span>
+        <section class="filters">
+          <h2 class="visually-hidden">Фильтры фотографии</h2>
+          <div class="filters__desc">
+            <p class="filters__text">Затмите их всех!</p>
+            <p class="filters__text">Выкладывайте все, что накопилось в телефоне!</p>
           </div>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card__image card__image--4" src="img/photo-fair-mobile@1x.jpg" alt="user photo" width="280" height="180">
-        <div class="card__inner">
-          <p class="card__user">
-            <span class="card__name">Сергей </span>
-            <span class="card__user-status">(25 часов назад)</span>
-          </p>
-          <p class="card__desc">Самая кубанская в мире!</p>
-          <div class="card__like">
-            <span class="card__like-count">нравится: 4</span>
+          <div class="filters__container"><img class="filters__image" src="img/photo-road-mobile@1x.jpg" alt="Фотография" width="280" height="374">
+            <div class="filters__inner">
+              <ul class="filters__list">
+                <li class="filters__item"><img class="filters__icon" src="img/icon-crop.svg" alt="Тип фильтра" width="44" height="44">
+                  <div class="filters__line"></div>
+                </li>
+                <li class="filters__item"><img class="filters__icon" src="img/icon-fill.svg" alt="Тип фильтра" width="48" height="43">
+                  <div class="filters__line"></div>
+                </li>
+                <li class="filters__item"><img class="filters__icon" src="img/icon-contrast.svg" alt="Тип фильтра" width="32" height="32">
+                  <div class="filters__line"></div>
+                </li>
+              </ul>
+              <div class="filters__action"><a class="filters__link filters__link--confirm" href="#">Запостить</a><a class="filters__link filters__link--decline" href="#">Отмена</a></div>
+            </div>
           </div>
-        </div>
+        </section>
       </div>
-      <div class="card">
-        <img class="card__image card__image--5" src="img/photo-pov-mobile@1x.jpg" alt="user photo" width="280" height="180">
-        <div class="card__inner">
-          <p class="card__user">
-            <span class="card__name">Максим </span>
-            <span class="card__user-status">(40 часов назад)</span>
-          </p>
-          <p class="card__desc">Где снег-то?</p>
-          <div class="card__like">
-            <span class="card__like-count">нравится: 150</span>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card__image card__image--6" src="img/photo-wing-mobile@1x.jpg" alt="user photo" width="280" height="180">
-        <div class="card__inner">
-          <p class="card__user">
-            <span class="card__name">Надежда </span>
-            <span class="card__user-status">(45 часов назад)</span>
-          </p>
-          <p class="card__desc">Всем GM и взаимные лайки!</p>
-          <div class="card__like">
-            <span class="card__like-count">нравится: 2560</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <section class="filters">
-      <h2 class="visually-hidden">Фильтры фотографии</h2>
-      <div class="filters__desc">
-        <p class="filters__text">Затмите их всех!</p>
-        <p class="filters__text">Выкладывайте все, что накопилось в телефоне!</p>
-      </div>
-      <div class="filters__container">
-        <img class="filters__image" src="img/photo-road-mobile@1x.jpg" alt="Фотография" width="280" height="374">
-        <div class="filters__inner">
-          <ul class="filters__list">
-            <li class="filters__item">
-              <img class="filters__icon" src="img/icon-crop.svg" alt="Тип фильтра" width="44" height="44">
-              <div class="filters__line"></div>
-            </li>
-            <li class="filters__item">
-              <img class="filters__icon" src="img/icon-fill.svg" alt="Тип фильтра" width="48" height="43">
-              <div class="filters__line"></div>
-            </li>
-            <li class="filters__item">
-              <img class="filters__icon" src="img/icon-contrast.svg" alt="Тип фильтра" width="32" height="32">
-              <div class="filters__line"></div>
-            </li>
-          </ul>
-          <div class="filters__action">
-            <a class="filters__link filters__link--confirm" href="#">Запостить</a>
-            <a class="filters__link filters__link--decline" href="#">Отмена</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <img class="site-footer__item site-footer__logo" src="img/logo-pink-blue-mobile.svg" alt="footer logo" width="147"
-      height="40">
-    <div class="social site-footer__item">
-      <a class="social__icon social__icon--twitter" href="https://twitter.com"></a>
-      <a class="social__icon social__icon--facebook" href="https://facebook.com"></a>
-      <a class="social__icon social__icon--youtube" href="https://youtube.com"></a>
-    </div>
-    <a class="site-footer__item" href="https://htmlacademy.ru">
-      <span class="site-footer__text">Разработано</span>
-      <img class="site-footer__academy-icon" src="img/htmlacademy.svg" alt="htmlacademy" width="27" height="34">
-    </a>
-  </footer>
-</body>
-
+    </main>
+    <footer class="site-footer"><img class="site-footer__item site-footer__logo" src="img/logo-pink-blue-mobile.svg" alt="footer logo" width="147" height="40"/>
+      <div class="social site-footer__item"><a class="social__icon social__icon--twitter" href="https://twitter.com"></a><a class="social__icon social__icon--facebook" href="https://facebook.com"></a><a class="social__icon social__icon--youtube" href="https://youtube.com"></a></div><a class="site-footer__item" href="https://htmlacademy.ru"><span class="site-footer__text">Разработано</span><img class="site-footer__academy-icon" src="img/logo-htmlacademy.svg" alt="htmlacademy" width="27" height="34"/></a>
+    </footer>
+  </body>
 </html>

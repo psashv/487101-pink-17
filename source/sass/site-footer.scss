@@ -50,9 +50,7 @@
   }
 
   .site-footer__text {
-    margin-bottom: 7px;
-
-    font-size: 18px;
+    margin-bottom: 4px;
   }
 }
 
@@ -66,5 +64,11 @@
 
   .site-footer__logo {
     content: url("../img/logo-pink-blue-desktop.svg");
+  }
+
+  .site-footer__text {
+    margin-bottom: 7px;
+
+    font-size: 18px;
   }
 }

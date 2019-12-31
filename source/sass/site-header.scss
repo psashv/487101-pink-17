@@ -4,7 +4,7 @@
   margin: 0 auto;
   color: #ffffff;
 
-  background: #000000 url("../img/bg-back-mobile@1x.jpg") 0 258px no-repeat;
+  background: #000000 url("../img/bg-back-mobile@1x.jpg") 0 259px no-repeat;
   background-size: 320px 462px;
 }
 
@@ -23,12 +23,13 @@
 .site-header__title {
   box-sizing: border-box;
   width: 170px;
-  height: 171px;
+  height: 170px;
   margin: 0 auto;
-  padding-top: 35px;
+  padding-top: 29px;
 
   font-size: 24px;
   font-weight: 300;
+  line-height: 29px;
   text-align: center;
 }
 
@@ -48,10 +49,11 @@
 
   .site-header__title {
     width: 500px;
-    height: 330px;
-    padding-top: 81px;
+    height: 329px;
+    padding-top: 69px;
 
     font-size: 50px;
+    line-height: 60px;
   }
 
   .site-header__image {

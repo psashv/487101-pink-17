@@ -5,7 +5,7 @@
 }
 
 .filters__desc {
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 
   font-size: 14px;
   line-height: 30px;
@@ -41,8 +41,8 @@
   margin: 0 auto;
   margin-bottom: 75px;
   padding: 0;
-  padding-left: 38px;
-  padding-right: 44px;
+  padding-left: 34px;
+  padding-right: 46px;
 
   font-size: 0;
   list-style: none;
@@ -80,7 +80,7 @@
   .filters__item:first-child .filters__line {
     position: absolute;
     top: 83px;
-    left: 20px;
+    left: 18px;
     content: "";
 
     display: block;
@@ -149,11 +149,11 @@
 @media (min-width: $tablet-width) {
   .filters {
     width: 660px;
-    padding-top: 70px;
+    padding-top: 66px;
   }
 
   .filters__desc {
-    margin-bottom: 65px;
+    margin-bottom: 68px;
 
     font-size: 18px;
   }
@@ -163,7 +163,7 @@
     justify-content: space-between;
     padding: 0 20px;
     padding-top: 57px;
-    padding-bottom: 57px;
+    padding-bottom: 54px;
   }
 
   .filters__image {
@@ -201,6 +201,7 @@
 
   .filters__item:nth-child(3) {
     margin-bottom: 0;
+    padding-bottom: 27px;
   }
 
   @media (max-width: calc(#{$desktop-width} - 1px)) {

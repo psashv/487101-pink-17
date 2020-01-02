@@ -6,6 +6,10 @@
 
   background: #000000 url("../img/bg-back-mobile@1x.jpg") 0 259px no-repeat;
   background-size: 320px 462px;
+
+  &--closed {
+    background-position: 0 0;
+  }
 }
 
 .site-header--main-page {
@@ -45,6 +49,10 @@
 
     background: #000000 url("../img/bg-back-tablet@1x.jpg") -270px 255px no-repeat;
     background-size: 1200px 729px;
+
+    &--closed {
+      background-position: -270px 0;
+    }
   }
 
   .site-header__title {

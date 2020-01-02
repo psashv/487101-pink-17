@@ -4,7 +4,29 @@
   box-sizing: border-box;
   width: 320px;
 
-  background-color: #000000;
+  &--closed {
+    .site-nav__toggle {
+      top: 21px;
+      right: 20px;
+    }
+
+    .site-nav__toggle::after {
+      display: none;
+    }
+
+    .site-nav__toggle::before {
+      display: block;
+    }
+
+    .site-nav__logo {
+      height: 66px;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .site-nav__list {
+      display: none;
+    }
+  }
 }
 
 .site-nav__logo {
@@ -17,21 +39,22 @@
   background-color: #283645;
 }
 
-.site-nav__logo::after {
-  content: url("../img/icon-menu-cross.svg");
+.site-nav__toggle {
+  display: flex;
   position: absolute;
   top: 20px;
   right: 19px;
+}
+
+.site-nav__toggle::after {
+  content: url("../img/icon-menu-cross.svg");
 
   width: 24px;
   height: 23px;
 }
 
-.site-nav__logo::before {
+.site-nav__toggle::before {
   content: url("../img/icon-menu-burger.svg");
-  position: absolute;
-  top: 21px;
-  right: 20px;
 
   display: none;
   width: 50px;
@@ -59,6 +82,20 @@
 @media (min-width: $tablet-width) {
   .site-nav {
     width: 660px;
+
+    &--closed {
+      .site-nav__toggle {
+        top: 44px;
+      }
+
+      .site-nav__logo {
+        height: 110px;
+      }
+    }
+  }
+
+  .site-nav__toggle {
+    top: 45px;
   }
 
   .site-nav__logo {
@@ -99,6 +136,10 @@
     padding-left: 0;
 
     background: none;
+  }
+
+  .site-nav__toggle {
+    display: none;
   }
 
   .site-nav__logo-image {

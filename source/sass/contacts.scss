@@ -57,16 +57,16 @@
   color: #d22856;
 }
 
-.contacts__desc--mail {
+.contacts__desc--link {
   display: block;
 }
 
-.contacts__desc--mail:hover {
+.contacts__desc--link:hover {
   color: #283645;
   text-decoration: underline;
 }
 
-.contacts__desc--mail:active {
+.contacts__desc--link:active {
   color: rgba(40, 54, 69, 0.3);
   text-decoration: none;
 }

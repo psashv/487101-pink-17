@@ -7,10 +7,10 @@ mixin contacts
     .contacts__inner
       .contacts__item
         h3.contacts__subtitle Звоните:
-        p.contacts__desc +7 (812) 555-66-66
+        a.contacts__desc.contacts__desc--link(href="tel:+78125556666") +7 (812) 555-66-66
       .contacts__item.contacts__item--mail
         h3.contacts__subtitle Пишите:
-        a.contacts__desc.contacts__desc--mail(href="#") mail@htmlacademy.ru
+        a.contacts__desc.contacts__desc--link(href="mailto:mail@htmlacademy.ru") mail@htmlacademy.ru
       .contacts__item
         h3.contacts__subtitle.contacts__subtitle--address Приезжайте в гости:
         p.contacts__desc ул. Большая Конюшенная, 19/8

@@ -58,24 +58,27 @@
 }
 
 .contacts__desc--link {
+  @include transition-property(color, text-decoration);
+
   display: block;
+  text-decoration: underline transparent;
 }
 
 .contacts__desc--link:hover {
   color: #283645;
-  text-decoration: underline;
+  text-decoration-color: #283645;
 }
 
 .contacts__desc--link:active {
   color: rgba(40, 54, 69, 0.3);
-  text-decoration: none;
+  text-decoration-color: transparent;
 }
 
 @media (min-width: $tablet-width) {
   .contacts {
     box-sizing: border-box;
     width: 660px;
-    height: 351px;
+    margin-bottom: 30px;
     padding: 0 50px;
     padding-top: 46px;
     padding-bottom: 0;

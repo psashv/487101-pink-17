@@ -1,4 +1,7 @@
 var siteHeader = document.querySelector('.site-header');
+if (!siteHeader) {
+  return 0;
+}
 var navSite = document.querySelector('.site-nav');
 var navToggle = document.querySelector('.site-nav__toggle');
 

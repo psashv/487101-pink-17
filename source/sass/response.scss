@@ -1,0 +1,12 @@
+.response {
+  @include transition-property(opacity);
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
